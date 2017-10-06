@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="master.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id='container'>
+        <script>
+            function wait(ms){
+                var start = new Date().getTime();
+                var end = start;
+                    while(end < start + ms) {
+                     end = new Date().getTime();
+                                                }
+            }
+
+            function addDiv(id){
+            var autoDiv = document.createElement('div');
+            autoDiv.className = 'tab';
+            autoDiv.id = id;
+            document.getElementById('container').appendChild(autoDiv);
+            document.getElementById(i).innerHTML = tab;
+            }
+
+
+
+        var tab = [12,1111,3425,65,4354,23,53,452345,435,3463,23,21,12312,5,57,69];
+        document.write('tablica: ',tab);    
+        
+        for (i=0;i < tab.length - 1; i++)
+        {
+            for (j=0;j<tab.length-1;j++)
+            {
+                if (tab[j] > tab[j+1] ){
+                    var temp = tab[j];
+                    tab[j] = tab[j+1];
+                    tab[j+1] =  temp;
+                }
+            }
+         setTimeout(addDiv(i),10000);  
+            
+
+        }
+        </script>
+
+    </div>
+    
+</body>
+</html>
