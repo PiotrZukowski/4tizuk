@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        function PobierzDane() 
+            {
+            var komunikat = '';
+            var login = document.getElementById('login').value;
+            if(document.forms.fm1.show_login.checked)
+                {
+                    komunikat = "twój login:" + login +". ";
+                }
+                else komunikat = "Twój login został ukryty ";
+                
+                var test =false;
+                var ile = document.forms.fm1.day.length;
+                
+                for(var i=0;i<ile;i++)
+                {                   
+                    if(document.forms.fm1.day[i].checked) test = true;
+                }
+                if(test == true)
+                {
+                    komunikat += "Wybrałeś następujące dni tygodnia ";
+                    for(var i=0;i<ile;i++)
+                    {
+                        if(document.forms.fm1.day[i].checked)komunikat += document.forms.fm1.day[i].value + ',';
+                    }
+                }else komunikat += 'Wybierz przynjamniej jeden dzień ';
+                alert(komunikat);
+
+            }
+    </script>
+</head>
+<body>
+    <div>
+        <form name = 'fm1' >
+            Podaj login:<input type="text" id='login' value=""/> <br><br>
+            Pokazać login? <input type="checkbox" name="show_login" id="">
+            <fieldset>
+                <legend>Wybierz przynajmniej jeden dzień tygodnia:</legend>
+                <input type="checkbox" name="day" value="poniedzialek" id="">poniedziałek <br>
+                <input type="checkbox" name="day" value="wtorek" id="">wtorek <br>
+                <input type="checkbox" name="day" value="sroda" id="">sroda <br>
+                <input type="checkbox" name="day" value="czwartek" id="">czwartek <br>
+                <input type="checkbox" name="day" value="piatek" id="">piatek <br>
+                <input type="button" value="PobierzDane" onclick="PobierzDane();">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

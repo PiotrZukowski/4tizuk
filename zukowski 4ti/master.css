@@ -1,0 +1,47 @@
+#container{
+  width: 900px;
+  height: 600px;
+  float: center:
+}
+
+#blokA {
+  width: 890px;
+  height: 50px;
+  padding: 5px;
+  background-color: yellow;
+}
+
+#blokB {
+  height: 447px;
+  width: 290px;
+  padding: 5px;
+  float: left;
+  background-color: red;
+}
+
+#blokC {
+  width: 578px;
+  height: 435px;
+  padding: 10px;
+  border: 1px solid black;
+  float: right;
+  background-color: blue;
+
+}
+
+
+
+
+#blokD {
+  padding: 10px;
+  width: 880px;
+  height: auto;
+  background-color: green;
+  clear: both;
+}
+
+#blokE {
+  background-color: orange;
+  width: 900px;
+  height: 45px;
+}
