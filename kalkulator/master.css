@@ -1,0 +1,42 @@
+#container {
+    width: 400px;
+    height: 500px;
+    background-color: #888888;
+}
+
+#output {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 75px;
+    background-color: red;
+}
+
+#display {
+    width: 400px;
+    height: 75px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: lightblue;
+}
+
+#buttons {
+    height: 425px;
+    width: 400px;
+    background-color: yellowgreen;
+}
+
+.button {
+    float: left;
+    margin: 0px;
+    width: 100px;
+    height: 85px;
+    border: 0px;
+    padding: 0px;
+    font: 20px Arial;
+}
+
+#equal {
+    width: 400px;
+}
