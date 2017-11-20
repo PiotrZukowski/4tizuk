@@ -10,33 +10,53 @@
 </head>
 
 <body>
+    <script>
+        function addToDisplay(x) {
+            x = String(x);
+
+            document.getElementById('display').value = document.getElementById('display').value + x;
+        }
+
+        function wynik() {
+            var pole = document.getElementById('display').value
+
+            document.getElementById('display').value = eval(pole)
+        }
+
+        function clean() {
+            document.getElementById('display').value = '';
+
+        }
+    </script>
+
+
 
     <div id='container'>
         <div id="output">
-            <input type="text" id="display" value='0'>
+            <input type="text" id="display" value=''>
         </div>
         <div id='buttons'>
-            <button class="button" value="7">7</button>
-            <button class="button" value="8">8</button>
-            <button class="button" value="9">9</button>
-            <button class="button" value="+">+</button>
+            <button class="button" value="7" onclick="addToDisplay(7);">7</button>
+            <button class="button" value="8" onclick="addToDisplay(8);">8</button>
+            <button class="button" value="9" onclick="addToDisplay(9);">9</button>
+            <button class="button" value="+" onclick="addToDisplay('+');">+</button>
             <br>
-            <button class="button" value="4">4</button>
-            <button class="button" value="5">5</button>
-            <button class="button" value="6">6</button>
-            <button class="button" value="-">-</button>
+            <button class="button" value="4" onclick="addToDisplay(4);">4</button>
+            <button class="button" value="5" onclick="addToDisplay(5);">5</button>
+            <button class="button" value="6" onclick="addToDisplay(6);">6</button>
+            <button class="button" value="-" onclick="addToDisplay('-');">-</button>
             <br>
-            <button class="button" value="1">1</button>
-            <button class="button" value="2">2</button>
-            <button class="button" value="3">3</button>
-            <button class="button" value="/">/</button>
+            <button class="button" value="1" onclick="addToDisplay(1);">1</button>
+            <button class="button" value="2" onclick="addToDisplay(2);">2</button>
+            <button class="button" value="3" onclick="addToDisplay(3);">3</button>
+            <button class="button" value="/" onclick="addToDisplay('/');">/</button>
             <br>
-            <button class="button" value="c">c</button>
-            <button class="button" value="0">0</button>
-            <button class="button" value=",">,</button>
-            <button class="button" value="*">*</button>
+            <button class="button" value="c" onclick='clean();'>C</button>
+            <button class="button" value="0" onclick="addToDisplay(0);">0</button>
+            <button class="button" value="." onclick="addToDisplay('.');">.</button>
+            <button class="button" value="*" onclick="addToDisplay('*');">*</button>
             <br>
-            <button class="button" id="equal">=</button>
+            <button class="button" id="equal" onclick="wynik();">=</button>
 
 
         </div>

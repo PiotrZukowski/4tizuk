@@ -13,12 +13,13 @@
 }
 
 #display {
-    width: 400px;
-    height: 75px;
+    width: 380px;
+    height: 55px;
     border: 0px;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     background-color: lightblue;
+    font: 25px consolas;
 }
 
 #buttons {
@@ -34,9 +35,18 @@
     height: 85px;
     border: 0px;
     padding: 0px;
-    font: 20px Arial;
+    font: 30px consolas;
+}
+
+.button:hover {
+    background-color: #777;
 }
 
 #equal {
     width: 400px;
+    background-color: #888;
+}
+
+#equal:hover {
+    color: red;
 }

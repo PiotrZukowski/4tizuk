@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    width: 1000px;
+    height: 700px;
+}
+
+#header {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(92, 151, 248);
+}
+
+#menu {
+    float: left;
+    width: 30%;
+    height: 580px;
+    background-color: #27ea7e;
+}
+
+#menu>a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+#content {
+    float: left;
+    width: 70%;
+    height: 580px;
+    background-color: red;
+}
+
+#footer {
+    height: 50px;
+    background-color: #5c97f8;
+    clear: both;
+    text-align: center;
+}

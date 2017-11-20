@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body onunload="">
+    <a href="usun.php?akcja=kasuj&id=$idrekordu" onclick="return confirm('Jesteś pewien')">Usuń rekord</a>
+
+    <!--
+    ondbclick
+    onmousedown - wciśnicie klawisza myszki
+    onmouseup - zwolnienie klawisza myszki
+    
+    onmouseover - kursoe myszki znalazł się w obszarze obiektu
+    onmouseout - zjazd z obiektu
+    onmousemove - kursor myszki został przesunięty
+
+    Parametry zdarzeń dostępnje poprzez obiekt event:
+    clientX, clientY - względne współrzędne kursora
+    screenX i screenY ekranowe (bezwzględne)
+    button - numer klawisza myszki który był użyty var numer = event.button;
+    altKey - 
+    ctrlKey - 
+    shiftKey - 
+    
+    Zdarzenia klawiatury:
+        onkeypress - klawisz alfanumeryczny został wciśnięty
+        onkeydown - klawisz został naciśnięty
+        onkeyup - klawisz został zwolniony
+
+        altkey, ctrlkey, shiftkey
+
+        keyCode pacha mi pachnie kakałem
+
+-->
+
+    <script>
+        var klawisz = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+    </script>
+
+</body>
+
+</html>
