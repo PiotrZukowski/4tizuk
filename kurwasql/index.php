@@ -46,6 +46,12 @@
         
     }
     mysqli_close($connect);
+
+    echo "<br>";
+    $txt = file_get_contents('kurwakwerenda.txt');
+    $split = split(PHP_EOL,$txt);
+    echo substr($split[0],4,-1);
+
     ?>
     
 </body>
